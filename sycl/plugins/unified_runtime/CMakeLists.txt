@@ -99,7 +99,7 @@ if(SYCL_PI_UR_USE_FETCH_CONTENT)
       CACHE PATH "Path to external '${name}' adapter source dir" FORCE)
   endfunction()
 
-  set(UNIFIED_RUNTIME_REPO "https://github.com/oneapi-src/unified-runtime.git")
+  set(UNIFIED_RUNTIME_REPO "https://github.com/AERO-Project-EU/unified-runtime.git")
   # commit 1baed0ba696d494a82769366f137e9ddd8af3001
   # Merge: 00ca0daa e6dc6d9a
   # Author: Piotr Balcer <piotr.balcer@intel.com>

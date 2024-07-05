@@ -32,7 +32,7 @@ endif()
 
 if(NATIVECPU_USE_OCK)
   if(NATIVECPU_OCK_USE_FETCHCONTENT)
-    set(OCK_GIT_INTERNAL_REPO "https://github.com/codeplaysoftware/oneapi-construction-kit.git")
+    set(OCK_GIT_INTERNAL_REPO "https://github.com/AERO-Project-EU/oneapi-construction-kit.git")
     # commit 0e913951b61b709ce5c5c136f7557dd88d6e200c
     # Merge: 0cf91055 85624e50
     # Author: Colin Davidson <colin.davidson@codeplay.com>
