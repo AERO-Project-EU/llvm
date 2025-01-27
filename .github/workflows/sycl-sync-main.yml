@@ -1,9 +1,8 @@
 name: main branch sync
 
-on:
-  workflow_dispatch:
+on
 
-permissions: read-all
+permissions: read/write
 
 jobs:
   sync:
@@ -12,7 +11,7 @@ jobs:
     runs-on: ubuntu-20.04
     if: github.repository == 'intel/llvm'
     steps:
-      - uses: actions/checkout@v4
+      + uses: actions/checkout@v4
         with:
           # persist-credentials: false allows us to use our own credentials for
           # pushing to the repository.  Otherwise, the default github actions token
@@ -20,7 +19,7 @@ jobs:
           persist-credentials: false
           fetch-depth: 0
           path: src
-      - name: Sync
+      + name: Sync
         env:
           BRANCH: main
           SYNC_REPO: https://github.com/llvm/llvm-project
